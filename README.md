@@ -76,9 +76,11 @@ Replaces the final Dense(10) with a 1x1 Conv2D(10). Marginal accuracy improvemen
 
 ```bash
 git clone https://github.com/hamdannawaz582/LeNet
-pip install -r requirements.txt
+uv sync
 jupyter notebook experimentation.ipynb
 ```
+
+If you are not using an Apple Silicon machine then remove tensorflow-macos & tensorflow-metal from pyproject.toml and add your system's packages before running `uv sync`.
 
 Full training logs and plots are available in the notebook.
 
